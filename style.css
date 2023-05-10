@@ -1,0 +1,276 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Karla&family=Noto+Sans:wght@300&family=Roboto:wght@300&family=Titillium+Web&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "noto-sans", sans-serif;
+    text-decoration-color: #e18335;
+}
+
+body {
+    overflow: inherit;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.5));
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body::-webkit-scrollbar {
+    background-color: black;
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #090A0E;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e18335;
+    border-radius: 16px;
+    border: 4px solid #090A0E;
+}
+
+.background1 {
+    width: 100%;
+    height: 110vh;
+}
+.background {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Config 'cabeçalho' */
+.cabecalho-link {
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabecalho-link a {
+    color: white;
+    font-size: 15px;
+}
+
+.cabecalho-link a:hover {
+    color: #e18335;
+    transition: 0.3s all;
+}
+
+button {
+    color: #e18335;
+    background: transparent;
+    border: none;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    width: 100px;
+    cursor: pointer;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e18335;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: right;
+    transition: scale 0.25s;
+}
+
+button:hover::before {
+    scale: 1;
+    transform-origin: left;
+}
+
+.container-text {
+    margin: 120px auto 40px auto;
+}
+
+.text h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.text h1 {
+    color: white;
+    margin-top: 10px;
+}
+
+.text span {
+    color: #e18335;
+}
+
+.text p {
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    color: #e18335;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* Config 'sobre mim' 'meus servoços' */
+.caixa {
+    max-width: 700px;
+}
+
+.caixa h1 {
+    color: white;
+    text-align: left;
+    margin: auto auto 10px auto;
+}
+
+.caixa span {
+    color: #e18335;
+}
+
+.caixa p {
+    color: white;
+    text-align: justify;
+}
+
+.caixa h2 a {
+    color: white;
+}
+.caixa h2 {
+    margin: 10px auto;
+}
+
+.caixa ul li {
+    color: white;
+}
+.caixa ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.caixa li {
+    margin: 3px auto;
+}
+
+.fa-check  {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+/* Config 'contatos'*/
+
+.ctt-body {
+    margin: 0px;
+}
+
+.container {
+    width: auto;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-button--facebook {
+    color: #3b5999;
+}
+
+.social-button--linkedin {
+    color: #0077b5;
+}
+
+.social-button--Instagram {
+    color: #e4405f;
+}
+
+.social-button--github {
+    color: #6e5494;
+}
+
+.social-button {
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 64px;
+    height: 64px;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #ffffff;
+    border: solid 5px;
+    text-align: center;
+}
+
+i {
+    font-size: 25px;
+}
+
+/* Config Responsividade */
+
+@media (max-width: 1900px) {
+    .container-text {
+        margin: 80px 40px 80px 40px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container-text {
+        margin: 80px 40px 80px 40px;
+    }
+}
+@media (min-width:1024px) {
+    .social-button {
+        display: inline-flex;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    .container-text {
+        margin: 80px 30px 0px 30px;
+    }
+
+    .background1 {
+        height: 125vh;
+    }
+}
+
+@media (max-width: 430px) {
+    .container-text {
+        margin: 50px 30px 0px 30px;
+    }
+
+    .caixa {
+        margin-bottom: 30px;
+    }
+}
