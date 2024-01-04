@@ -67,18 +67,21 @@
         display: block;
     }
     #three {
-        height: 300vh;
+        height: 260vh;
     }
     #for {
         height: 130vh;
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 640px) {
     .caixas {
         flex-direction: column;
         align-items: center;
         margin-top: 20%;
+    }
+    #three {
+        height: 400vh;
     }
 }
 
