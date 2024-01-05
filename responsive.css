@@ -65,6 +65,7 @@
     }
     .open {
         display: block;
+        text-align: center;
     }
     #three {
         height: 260vh;
@@ -105,7 +106,7 @@
         height: 120vh;
     }
     #three {
-        height: 330vh;
+        height: 355vh;
     }
 
     #for {
