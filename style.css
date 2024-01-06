@@ -4,20 +4,53 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: Montserrat;
-    margin: 0;
-    background-image: linear-gradient(to bottom, rgb(11, 11, 11), rgb(55, 55, 55));
+* {
+    color: var(--font) !important;
 }
 
-* {
-    color: white !important;
+body {
+    font-family: Montserrat;
+    background-image: var(--bg);
+    margin: 0;
 }
+
+.tema-black {
+    --bg: var(--blackBg);
+    --font: var(--whiteFont);
+    --header: var(--blackBgH);
+    --Cx: var(--blackCx);
+    --shadowCx: var(--blackCxS);
+}
+
+.tema-white {
+    --bg: var(--whiteBg);
+    --font: var(--blackFont);
+    --header: var(--grayBgH);
+    --headerFont: var(--whiteBgH);
+    --Cx: var(--whiteCx);
+    --shadowCx: var(--whiteCxS);
+}
+
+
+:root {
+    --blackBg: linear-gradient(to right, rgb(11, 11, 11), rgb(32, 32, 32));
+    --blackFont: #030303;
+    --whiteBg: linear-gradient(to right, rgb(224, 224, 224), rgb(143, 143, 143));
+    --whiteFont: #d0d0d0;
+    --blackBgH: #090909;
+    --grayBgH: #424242;
+    --whiteBgH: #fff;
+    --blackCx: #2f2f2f;
+    --whiteCx: #e1e1e1;
+    --blackCxS: #000;
+    --whiteCxS: #8d8d8d;
+}
+
 
 /*Config header*/
 header {
     position: fixed;
-    background-color: rgb(12, 12, 12);
+    background-color: var(--header); 
     width: 100%;
     padding: 14px 0px;
     align-items: center;
@@ -34,6 +67,7 @@ header ul li {
 }
 header ul li a {
     text-decoration: none;
+    color: var(--headerFont) !important;
 }
 .nav-bar {
     display: flex;
@@ -74,6 +108,17 @@ header ul li a {
     margin-top: 7.4px;
 }
 
+.botao {
+    width: 25px;
+    height: 25px;
+}
+
+.botao-lanterna {
+    background-color: transparent;
+    border: none;
+    margin-top: 7px;
+}
+
 /*Config sections*/
 #one, #two, #three, #for, #five {
     height: 110vh;
@@ -101,7 +146,7 @@ header ul li a {
 
 .title {
     font-size: 50px;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.349), rgb(0, 35, 210));
+    background-image: linear-gradient(to bottom, rgba(3, 238, 255, 0.349), rgb(15, 36, 145));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -204,6 +249,7 @@ header ul li a {
     width: 270px;
     height: 390px;
     margin: 10px ;
+    background-color: var(--Cx);
 }
 .caixinhas a{
     text-decoration: none;
@@ -240,7 +286,12 @@ header ul li a {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    border: 1px solid --Cx;
+    background-color: var(--Cx);
+    margin: 8px;
+    border-radius: 5px;
+    box-shadow: 1px 5px 7px 1px var(--shadowCx);
 }
 .caixas-skills li img {
     width: 100px;
