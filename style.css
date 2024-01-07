@@ -203,6 +203,9 @@ header ul li a {
     font-size: 20px;
     margin-top: 10px;
 }
+.caixa-eu li::marker {
+    content: "\27AA  ";
+}
 
 .caixa-eu {
     border-radius: 20px;
@@ -292,7 +295,15 @@ header ul li a {
     margin: 8px;
     border-radius: 5px;
     box-shadow: 1px 5px 7px 1px var(--shadowCx);
+    width: 100px;
+    height: 190px;
 }
+
+.caixas-skills li:hover {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
 .caixas-skills li img {
     width: 100px;
     align-self: center;
