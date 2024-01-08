@@ -299,11 +299,6 @@ header ul li a {
     height: 190px;
 }
 
-.caixas-skills li:hover {
-    transform: scale(1.1);
-    transition: .4s;
-}
-
 .caixas-skills li img {
     width: 100px;
     align-self: center;
