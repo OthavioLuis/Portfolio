@@ -2,6 +2,12 @@ const switcher = document.querySelector('.botao');
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('tema-white');
+    let body = document.body
+    if (body.classList.contains('tema-white')) {
+        switcher.src = "img/lanterna-false.png"
+    } else {
+        switcher.src = "img/lanterna-true.png"
+    }
 });
 
 function menuAparecer() {
