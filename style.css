@@ -174,9 +174,10 @@ header ul li a {
 }
 
 .name-text {
-    margin-top: 20px;
+    margin-bottom: 40px;
     width: 300px;
     font-size: 40px;
+    padding-top: 30px;
     padding-bottom: 7px;
     border-bottom: 4px solid rgb(104, 104, 104);
 }
@@ -230,7 +231,7 @@ header ul li a {
 /*Config da terceira section*/
 
 #three {
-    height: 170vh;
+    height: 230vh;
 }
 
 .caixas {
