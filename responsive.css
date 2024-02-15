@@ -22,7 +22,7 @@
         height: 130vh;
     }
     #three {
-        height: 280vh;
+        height: 100vh;
     }
     #for {
         height: 130vh;
@@ -68,7 +68,7 @@
         text-align: center;
     }
     #three {
-        height: 260vh;
+        height: 200vh;
     }
     #for {
         height: 130vh;
@@ -82,7 +82,7 @@
         margin-top: 20%;
     }
     #three {
-        height: 530vh;
+        height: 400vh;
     }
 }
 
@@ -106,7 +106,7 @@
         height: 120vh;
     }
     #three {
-        height: 530vh;
+        height: 300vh;
     }
 
     #for {
@@ -143,6 +143,16 @@
     }
     #for {
         height: 200vh;
+    }
+
+    .bxDisplay {
+        width: 340px;
+    }
+    .boxFlex a {
+        padding: 10px 15px;
+    }
+    .JCL-link {
+        margin-left: 36px;
     }
 }
 @media (max-width: 400px) {

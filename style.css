@@ -21,6 +21,7 @@ body {
     --header: var(--blackBgH);
     --Cx: var(--blackCx);
     --shadowCx: var(--blackCxS);
+    --btProject: var(--blackProject);
 }
 
 .tema-white {
@@ -30,6 +31,7 @@ body {
     --headerFont: var(--whiteBgH);
     --Cx: var(--whiteCx);
     --shadowCx: var(--whiteCxS);
+    --btProject: var(--whiteProject);
 }
 
 
@@ -45,6 +47,8 @@ body {
     --whiteCx: #e1e1e1;
     --blackCxS: #000;
     --whiteCxS: #8d8d8d;
+    --blackProject: #1b1b1b;
+    --whiteProject: #bdbdbd;
 }
 
 
@@ -118,6 +122,66 @@ header ul li a {
     background-color: transparent;
     border: none;
     margin-top: 7px;
+}
+
+/*Config da section boxDisplay*/
+
+.boxDisplay {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.2);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.bxDisplay{
+    text-align: center;
+    width: 400px;
+    height: 350px;
+    background-color: var(--Cx);
+    display: none;
+    border-radius: 10px;
+}
+.x-sair {
+    display: flex;
+    justify-content: end;
+    right: 0;
+    padding: 17px;
+}
+.x-sair i {
+    cursor: pointer;
+}
+.boxDisplay div h1 {
+    margin: 0px 0px 10px 0px;
+}
+.boxDisplay div p {
+    text-align: justify;
+    margin: 35px 20px 5px 20px;
+}
+.boxFlex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    padding: 40px 100px;
+}
+.boxFlex a {
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 5px;
+    background-color: var(--btProject);
+    text-decoration: none;
+}
+.boxFlex i {
+    font-size: 26px;
+}
+
+.JCL-link {
+    margin-left: 60px;
 }
 
 /*Config sections*/
@@ -253,9 +317,10 @@ header ul li a {
     padding: 14px 7px;
     border: 1px solid gray;
     width: 270px;
-    height: 390px;
+    height: 202px;
     margin: 10px ;
     background-color: var(--Cx);
+    cursor: pointer;
 }
 .caixinhas a{
     text-decoration: none;
