@@ -7,6 +7,7 @@ html {
 * {
     color: var(--font) !important;
     margin: 0;
+    text-decoration: none;
 }
 
 body {
@@ -22,6 +23,8 @@ body {
     --Cx: var(--blackCx);
     --shadowCx: var(--blackCxS);
     --btProject: var(--blackProject);
+    --cttbloco1: var(--cttBlack);
+    --cttbloco2: var(--ctt2Black);
 }
 
 .tema-white {
@@ -32,6 +35,8 @@ body {
     --Cx: var(--whiteCx);
     --shadowCx: var(--whiteCxS);
     --btProject: var(--whiteProject);
+    --cttbloco1: var(--cttWhite);
+    --cttbloco2: var(--ctt2White);
 }
 
 
@@ -49,6 +54,10 @@ body {
     --whiteCxS: #8d8d8d;
     --blackProject: #1b1b1b;
     --whiteProject: #bdbdbd;
+    --cttBlack: #000;
+    --cttWhite: #a3a3a3;
+    --ctt2Black: #2c2c2c;
+    --ctt2White: #dddddd;
 }
 
 
@@ -221,6 +230,7 @@ header ul li a {
     overflow: hidden;
     animation: digitando 2s steps(19), piscando 0.5s infinite step-end alternate;
     width: 100%;
+    margin-bottom: 30px;
 }
 @keyframes  digitando{
     from {
@@ -388,10 +398,40 @@ header ul li a {
     flex-wrap: wrap;
     justify-content: center;
 }
-.caixa-img a {
-    margin: 20px 20px 0px 20px;
-    text-decoration: none;
-}
 .botoes {
     text-align: center;
+}
+
+.caixa-contatos {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.caixa-img-contatos {
+    background-color: var(--cttbloco1);
+    height: 100%;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 9px 0px 0px 9px;
+}
+
+.caixa-img-contatos img {
+    width: 280px !important;
+}
+
+.caixa-contatos-botoes {
+    background-color: var(--cttbloco2);
+    height: 100%;
+    width: 50%;
+    border-radius: 0px 9px 9px 0px;
+}
+.caixa-contatos-botoes i {
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 5px;
 }

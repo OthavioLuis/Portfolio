@@ -75,6 +75,35 @@
     }
 }
 
+@media (max-width: 845px) {
+    .caixa-contatos {
+        display: flex;
+        flex-direction: column;
+        width: 90% !important;
+        height: 1000px;
+    }
+    .caixa-img-contatos, .caixa-contatos-botoes {
+        width: 70%;
+        height: 50%;
+    }
+
+    .caixa-img-contatos {
+        border-radius: 9px 9px 0px 0px !important;
+    }
+    .caixa-contatos-botoes {
+        border-radius: 0px 0px 9px 9px !important;
+    }
+
+    .caixa-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa-img-contatos img {
+        margin: 0px 0px!important;
+    }
+}
+
 @media (max-width: 640px) {
     .caixas {
         flex-direction: column;
@@ -115,6 +144,10 @@
 
     .caixas-skills ul {
         width: none;
+    }
+    .caixa-img-contatos, .caixa-contatos-botoes {
+        width: 90%;
+        height: 50%;
     }
 }
 @media (max-width: 500px) {
