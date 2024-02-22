@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -16,6 +16,19 @@ body {
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollReta);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll);
+    border-radius: 10px;
+}
+
 .tema-black {
     --bg: var(--blackBg);
     --font: var(--whiteFont);
@@ -25,6 +38,8 @@ body {
     --btProject: var(--blackProject);
     --cttbloco1: var(--cttBlack);
     --cttbloco2: var(--ctt2Black);
+    --scroll: var(--scrollBlack);
+    --scrollReta: var(--scrollRetaBlack)
 }
 
 .tema-white {
@@ -37,13 +52,15 @@ body {
     --btProject: var(--whiteProject);
     --cttbloco1: var(--cttWhite);
     --cttbloco2: var(--ctt2White);
+    --scroll: var(--scrollWhite);
+    --scrollReta: var(--scrollRetaWhite)
 }
 
 
 :root {
     --blackBg: linear-gradient(to right, rgb(11, 11, 11), rgb(32, 32, 32));
     --blackFont: #030303;
-    --whiteBg: linear-gradient(to right, rgb(224, 224, 224), rgb(143, 143, 143));
+    --whiteBg: #b9b9b9;
     --whiteFont: #d0d0d0;
     --blackBgH: #090909;
     --grayBgH: #424242;
@@ -58,6 +75,10 @@ body {
     --cttWhite: #a3a3a3;
     --ctt2Black: #2c2c2c;
     --ctt2White: #dddddd;
+    --scrollBlack: #2F2F2F;
+    --scrollWhite: #E1E1E1;
+    --scrollRetaBlack: #090909;
+    --scrollRetaWhite: #424242;
 }
 
 
@@ -68,6 +89,7 @@ header {
     width: 100%;
     padding: 14px 0px;
     align-items: center;
+    z-index: 1;
 }
 header img {
     width: 260px;
@@ -144,6 +166,7 @@ header ul li a {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    z-index: 2;
 }
 
 .bxDisplay{
@@ -266,6 +289,20 @@ header ul li a {
     font-size: 30px;
 }
 
+.caixa-icon-one {
+    display: flex;
+}
+.caixa-icon-one div {
+    font-size: 37px;
+    margin: 23px;
+    margin-left: 0;
+    cursor: pointer;
+}
+.caixa-icon-one div:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
 /*Config da segunda section*/
 .div1{
     text-align: -webkit-center;
@@ -307,6 +344,10 @@ header ul li a {
 #three {
     height: 230vh;
 }
+.div-width {
+    max-width: 1200px;
+    margin: auto;
+}
 
 .caixas {
     width: 100%;
@@ -332,6 +373,12 @@ header ul li a {
     background-color: var(--Cx);
     cursor: pointer;
 }
+
+.caixinhas:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
 .caixinhas a{
     text-decoration: none;
 }
@@ -377,6 +424,11 @@ header ul li a {
     height: 190px;
 }
 
+.caixas-skills li:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
 .caixas-skills li img {
     width: 100px;
     align-self: center;
@@ -395,6 +447,7 @@ header ul li a {
 }
 .caixa-img {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -431,7 +484,7 @@ header ul li a {
     border-radius: 0px 9px 9px 0px;
 }
 .caixa-contatos-botoes i {
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 50px;
     margin-bottom: 5px;
 }
