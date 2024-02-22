@@ -235,7 +235,7 @@ header ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
     width: 90%;
     max-width: 1024px;
