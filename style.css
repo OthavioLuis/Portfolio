@@ -434,6 +434,13 @@ header ul li a {
     align-self: center;
 }
 
+.logo-php {
+    margin-top: 20px;
+}
+
+.frase-php {
+    margin-top: -12px;
+}
 /*Config da Quinta section*/
 
 #five {
