@@ -1,5 +1,6 @@
 const switcher = document.querySelector('.botao');
 let caixaDisplay = document.querySelector('#boxDisplay');
+let box0 = document.querySelector('.box00');
 let box1 = document.querySelector('.box01');
 let box2 = document.querySelector('.box02');
 let box3 = document.querySelector('.box03');
@@ -32,6 +33,7 @@ function menuAparecer() {
 
 function sairBox() {
     caixaDisplay.style.display = 'none'
+    box0.style.display = 'none'
     box1.style.display = 'none'
     box2.style.display = 'none'
     box3.style.display = 'none'
@@ -40,6 +42,11 @@ function sairBox() {
     box6.style.display = 'none'
     box7.style.display = 'none'
     box8.style.display = 'none'
+}
+
+function aparecerCaixa0() {
+    caixaDisplay.style.display = 'flex'
+    box0.style.display = 'block'
 }
 
 function aparecerCaixa1() {

@@ -30,15 +30,6 @@
         display: flex;
         flex-direction: column;
     }
-    #one {
-        height: 130vh;
-    }
-    #three {
-        height: 100vh;
-    }
-    #for {
-        height: 130vh;
-    }
     
 }
 
@@ -79,12 +70,6 @@
         display: block;
         text-align: center;
     }
-    #three {
-        height: 200vh;
-    }
-    #for {
-        height: 130vh;
-    }
 }
 
 @media (max-width: 845px) {
@@ -124,9 +109,6 @@
         align-items: center;
         margin-top: 20%;
     }
-    #three {
-        height: 400vh;
-    }
 }
 
 @media (max-width: 600px) {
@@ -144,16 +126,6 @@
     }
     .nav-bar {
         padding: 13px 4px;
-    }
-    #one, #two, #five {
-        height: 120vh;
-    }
-    #three {
-        height: 300vh;
-    }
-
-    #for {
-        height: 200vh;
     }
 
     .caixas-skills ul {
@@ -187,9 +159,6 @@
     }
     .name-text {
         width: 200px;
-    }
-    #for {
-        height: 200vh;
     }
 
     .bxDisplay {

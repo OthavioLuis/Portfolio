@@ -58,7 +58,7 @@ body {
 
 
 :root {
-    --blackBg: linear-gradient(to right, rgb(11, 11, 11), rgb(32, 32, 32));
+    --blackBg: linear-gradient(to right, #121212, #121212);
     --blackFont: #030303;
     --whiteBg: #b9b9b9;
     --whiteFont: #d0d0d0;
@@ -218,14 +218,12 @@ header ul li a {
 
 /*Config sections*/
 #one, #two, #three, #for, #five {
-    height: 110vh;
     padding-top: 50px !important;
 }
 
 /*Config da primeira section*/
 #one {
     padding-top: 0px;
-    height: 150vh;
 }
 #one img {
     width: 470px;
@@ -243,7 +241,7 @@ header ul li a {
 
 .title {
     font-size: 50px;
-    background-image: linear-gradient(to bottom, rgba(3, 238, 255, 0.349), rgb(15, 36, 145));
+    background-image: linear-gradient(to bottom, rgb(255, 135, 43), rgb(77, 40, 12));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -341,9 +339,6 @@ header ul li a {
 
 /*Config da terceira section*/
 
-#three {
-    height: 230vh;
-}
 .div-width {
     max-width: 1200px;
     margin: auto;

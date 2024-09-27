@@ -18,11 +18,11 @@
             </div>
             <div class="nav-list">
                 <ul>
-                    <li class="menu-itens"><a href="#one">Home</a></li>
-                    <li class="menu-itens"><a href="#two">About Me</a></li>
-                    <li class="menu-itens"><a href="#three">Projects</a></li>
-                    <li class="menu-itens"><a href="#for">Skills</a></li>
-                    <li class="menu-itens"><a href="#five">Contact</a></li>
+                    <li class="menu-itens"><a href="#one">Inicio</a></li>
+                    <li class="menu-itens"><a href="#two">Sobre</a></li>
+                    <li class="menu-itens"><a href="#three">Projetos</a></li>
+                    <li class="menu-itens"><a href="#for">Habilidades</a></li>
+                    <li class="menu-itens"><a href="#five">Contato</a></li>
                 </ul>
             </div>
             <button class="botao-lanterna">
@@ -36,15 +36,25 @@
         </nav>
         <div class="menu-mobile">
             <ul>
-                <li class="menu-itens"><a href="#one">Home</a></li>
-                <li class="menu-itens"><a href="#two">About Me</a></li>
-                <li class="menu-itens"><a href="#three">Projects</a></li>
-                <li class="menu-itens"><a href="#for">Skills</a></li>
-                <li class="menu-itens"><a href="#five">Contact</a></li>
+                <li class="menu-itens"><a href="#one">Inicio</a></li>
+                <li class="menu-itens"><a href="#two">Sobre</a></li>
+                <li class="menu-itens"><a href="#three">Projetos</a></li>
+                <li class="menu-itens"><a href="#for">Habilidades</a></li>
+                <li class="menu-itens"><a href="#five">Contato</a></li>
             </ul>
         </div>
     </header>
     <section class="boxDisplay" id="boxDisplay"> 
+        <div class="box00 bxDisplay">
+            <div class="x-sair">
+                <i class="fa-solid fa-x" onclick="sairBox()"></i>
+            </div>
+            <h1>App ParkNow</h1>
+            <p>Aplicativo de estacionamento que monitora o tempo restante do veículo e permite realizar pagamentos diretamente pelo app, criado com ReactNative e a ferramenta Expo.</p>
+            <div class="boxFlex">
+                <a target="_blank" href="https://github.com/OthavioLuis/Park-Now-App"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
         <div class="box01 bxDisplay">
             <div class="x-sair">
                 <i class="fa-solid fa-x" onclick="sairBox()"></i>
@@ -163,18 +173,16 @@
     </section>
     <section class="box box2" id="two">
         <div  class="div1">
-            <h1 class="name-text">About Me</h1>
+            <h1 class="name-text">Sobre</h1>
         </div>
         <div class="caixa-eu">
             <div>
                 <ul class="cor">
-                    <li>Olá, me chamo Othavio Luis;</li>
-                    <li>Tenho 19 anos;</li>
+                    <li>Olá, me chamo Othavio Luis e tenho 19 anos;</li>
                     <li>Moro em Itanhaém, SP;</li>
-                    <li>Concluí o Ensino Médio em 2022;</li>
-                    <li>Cursando graduação em Desenvolvimento de Sistemas na Faculdade das Américas(FAM)</li>
+                    <li>Cursando Tecnólogo em Desenvolvimento de Sistemas na Faculdade das Américas(FAM)</li>
                     <li>Cursando Técnico em Desenvolvimento de Sistemas na <a href="https://www.cps.sp.gov.br/etec/">Etec</a> (Escola Técnica Estadual);</li>
-                    <li>Estou buscando minha primeira oportunidade de Emprego Como Desenvolvedor Front-End Jr;</li>
+                    <li>Estou em busca da minha primeira oportunidade como Desenvolvedor Front-End Júnior;</li>
                 </ul>
             </div>
         </div>
@@ -185,9 +193,12 @@
     <section class="box box3" id="three">
         <div class="div-width">
             <div class="div1">
-                <h1 class="name-text">Projects</h1>
+                <h1 class="name-text">Projetos</h1>
             </div>
             <div class="caixas">
+                <div class="caixinhas">
+                    <img onclick="aparecerCaixa0()" src="img/parknow.jpg" alt="App ParkNow">
+                </div>
                 <div class="caixinhas">
                     <img onclick="aparecerCaixa1()" src="img/th-page.png" alt="capa do site da home page Tommy Hifiger">
                 </div>
@@ -225,6 +236,11 @@
         <div class="caixas-skills">
             <ul>
                 <li>
+                    <img src="img/react.png" alt="Logo ReactNative">
+                    <span>Advanced</span>
+                    <p>ReactNative</p>
+                </li>
+                <li>
                     <img src="img/html5.png" alt="Logo HTML5">
                     <span>Advanced</span>
                     <p>HTML</p>
@@ -236,13 +252,13 @@
                 </li>
                 <li>
                     <img src="img/javascript.png" alt="Logo JavaScript">
-                    <span>intermediate</span>
+                    <span>Advanced</span>
                     <p>JavaScript</p>
                 </li>
                 <li>
                     <img class="logo-php" src="img/PHP.png" alt="PHP">
                     <br><br>
-                    <span class="frase-php">intermediate</span>
+                    <span class="frase-php">Advanced</span>
                     <p>PHP</p>
                 </li>
                 <li>
@@ -252,7 +268,7 @@
                 </li>
                 <li>
                     <img src="img/mysql.png" alt="Logo MySQL">
-                    <span>intermediate</span>
+                    <span>Advanced</span>
                     <p>MySQL</p>
                 </li>
                 <li>
@@ -262,7 +278,7 @@
                 </li>
                 <li>
                     <img src="img/git.png" alt="Logo Git">
-                    <span>intermediate</span>
+                    <span>Advanced</span>
                     <p>Git</p>
                 </li>
             </ul>
